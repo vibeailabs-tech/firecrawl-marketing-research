@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "company": { "type": "string" },
+    "headline": { "type": "string", "description": "Main hero headline" },
+    "subheadline": { "type": "string" },
+    "value_propositions": { "type": "array", "items": { "type": "string" } },
+    "target_audience": { "type": "string" },
+    "key_features": { "type": "array", "items": { "type": "string" } },
+    "primary_cta": { "type": "string" },
+    "secondary_cta": { "type": "string" },
+    "social_proof": { "type": "array", "items": { "type": "string" }, "description": "Customer logos, testimonials, numbers like '10,000+ customers', awards" },
+    "tone_of_voice": { "type": "string", "description": "Short description of the writing tone" },
+    "offers_or_promotions": { "type": "array", "items": { "type": "string" } }
+  }
+}

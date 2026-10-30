@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "publish_date": { "type": "string" },
+    "word_count_estimate": { "type": "number" },
+    "search_intent": { "type": "string", "description": "informational / commercial / transactional / navigational" },
+    "headings": { "type": "array", "items": { "type": "string" }, "description": "H2/H3 outline in order" },
+    "main_topics_covered": { "type": "array", "items": { "type": "string" } },
+    "content_formats": { "type": "array", "items": { "type": "string" }, "description": "e.g. table, checklist, video, template, FAQ, case study" },
+    "cta": { "type": "string" },
+    "unique_angle": { "type": "string" }
+  }
+}

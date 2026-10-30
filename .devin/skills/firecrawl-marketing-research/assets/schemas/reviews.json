@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "product": { "type": "string" },
+    "average_rating": { "type": "string" },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rating": { "type": "string" },
+          "date": { "type": "string" },
+          "reviewer_role_or_segment": { "type": "string", "description": "Role/company size/segment if shown; do not include personal names" },
+          "likes": { "type": "string" },
+          "dislikes": { "type": "string" },
+          "quote": { "type": "string", "description": "Most telling sentence, verbatim" }
+        }
+      }
+    }
+  },
+  "required": ["reviews"]
+}

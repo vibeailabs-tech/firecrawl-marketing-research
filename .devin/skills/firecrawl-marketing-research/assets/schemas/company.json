@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "company_name": { "type": "string" },
+    "description": { "type": "string", "description": "One or two sentence description" },
+    "industry": { "type": "string" },
+    "products_or_services": { "type": "array", "items": { "type": "string" } },
+    "target_customers": { "type": "string" },
+    "headquarters_location": { "type": "string" },
+    "company_size_hint": { "type": "string", "description": "Any public hint of size: employees, offices, customers" },
+    "public_contact_page": { "type": "string", "description": "URL of contact page if present" },
+    "public_business_email": { "type": "string", "description": "Generic business email shown publicly (info@, sales@), not personal emails" },
+    "social_links": { "type": "array", "items": { "type": "string" } }
+  }
+}

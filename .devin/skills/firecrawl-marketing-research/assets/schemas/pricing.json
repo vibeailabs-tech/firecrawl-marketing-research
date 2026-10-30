@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "company": { "type": "string" },
+    "currency": { "type": "string" },
+    "free_trial": { "type": "string", "description": "Free plan / trial info, empty if none" },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "plan_name": { "type": "string" },
+          "price": { "type": "string", "description": "Price exactly as displayed, e.g. '$29/month' or '299.000đ/tháng'" },
+          "billing_period": { "type": "string" },
+          "target_customer": { "type": "string" },
+          "key_features": { "type": "array", "items": { "type": "string" } },
+          "limits": { "type": "string", "description": "Usage limits: seats, quota, storage..." },
+          "cta": { "type": "string", "description": "Call-to-action button text" }
+        },
+        "required": ["plan_name", "price"]
+      }
+    }
+  },
+  "required": ["plans"]
+}
